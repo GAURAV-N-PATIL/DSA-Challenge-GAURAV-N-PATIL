@@ -75,6 +75,27 @@ void merge() {
     printf("\n");
 }
 
+// Display of the sorted merged array
+void sorted_merged(){
+        int i;
+
+    if(n1 == 0 && n2 == 0) {
+        printf("\nNo arrays created yet!\n");
+        return;
+    }
+
+    if(n1 + n2 == 0) {
+        printf("\nNo merged array to display!\n");
+        return;
+    }
+
+    printf("\nSorted Merged Array:\n");
+    for(i = 0; i < n1 + n2; i++) {
+        printf("%d ", merged[i]);
+    }
+    printf("\n");
+}
+
 // Main Function
 int main() {
     int choice;
@@ -83,8 +104,9 @@ int main() {
         printf("\n===== MENU =====\n");
         printf("1. Create Arrays\n");
         printf("2. Sort Arrays\n");
-        printf("3. Merge Arrays\n");
-        printf("4. Exit\n");
+        printf("3. Merge Arrays - Before using option 3 check if sorted those two arrays\n");
+        printf("4. Sorted Merge Arrays - Use if you haven't perfomed choice 2");
+        printf("5. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -99,6 +121,9 @@ int main() {
                 merge();
                 break;
             case 4:
+                sorted_merged();
+                break;
+            case 5:
                 return 0;
             default:
                 printf("Please enter correct option\n");
