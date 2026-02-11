@@ -42,9 +42,9 @@ Given an array `nums` and a target value, find two numbers whose sum equals the 
 ---
 ## Output images
 * Challenge 1
-![Challenge 1](<Screenshot 2026-02-11 203247.png>)
+![Challenge 1](<images/Screenshot 2026-02-11 203247.png>)
 * Challenge 2
-![Challenge 2](<Screenshot 2026-02-11 201803.png>)
+![Challenge 2](<images/Screenshot 2026-02-11 201803.png>)
 
 ## Language Used
 
